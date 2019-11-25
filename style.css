@@ -67,3 +67,10 @@ body {
   stroke-dasharray: 422.4960632324219px;
   stroke-dashoffset: 422.4960632324219px;
 }
+
+
+@keyframes line-anim{
+    to {
+      stroke-dashoffset: 0;
+    }
+}

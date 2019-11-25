@@ -139,10 +139,28 @@ STEP 7: Create a for loop to loop through each letter:
     Letter 23 is 422.4960632324219
   ------------------------------------------------------------------
   * So for example, 493 is how long the actual path for "D" is, etc.
-  * Also note that if you change the offset to the same value, the letter will disappear. This 
+  * Also note that if you change the offset to the same value, the letter will disappear. This is because it is covering the offset.
+  * This is what we will use to animate the letters.
+
+
 
 
   STEP 8: Replace the stroke-dasharray for each of the corresponding letters with the numbers provided:
     -------------------------------------------------------------------------------
-
+      #logo path:nth-child(2) {                /*   S  */
+        stroke-dasharray: 493.9128723144531px;
+        stroke-dashoffset: 493.9128723144531px;
+      }
     -------------------------------------------------------------------------------
+
+
+
+
+STEP 9: Add keyframes to animate:
+  -----------------------------------------------------------------------
+    @keyframes line-anim{
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+  -----------------------------------------------------------------------
