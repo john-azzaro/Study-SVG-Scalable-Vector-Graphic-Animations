@@ -18,42 +18,52 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#logo path:nth-child(1) {
-  stroke-dasharray: 30px;
-}
-#logo path:nth-child(2) {
-  stroke-dasharray: 30px;
-}
-#logo path:nth-child(3) {
-  stroke-dasharray: 30px;
-}
-#logo path:nth-child(4) {
 
+#logo path:nth-child(2) {                /*   S  */
+  stroke-dasharray: 493.9128723144531px;
+  stroke-dashoffset: 493.9128723144531px;
 }
-#logo path:nth-child(5) {
-
+#logo path:nth-child(3) {                /*   V  */
+  stroke-dasharray: 441.6846923828125px;
+  stroke-dashoffset: 441.6846923828125px;
 }
-#logo path:nth-child(6) {
-
+#logo path:nth-child(4) {                /*   G  */
+  stroke-dasharray: 635.712890625px;
+  stroke-dashoffset: 635.712890625px;
 }
-#logo path:nth-child(7) {
-
+#logo path:nth-child(5) {                /*   A  */
+  stroke-dasharray: 490.2921142578125px;
+  stroke-dashoffset: 490.2921142578125px;
 }
-#logo path:nth-child(8) {
-
+#logo path:nth-child(6) {                /*   N  */
+  stroke-dasharray: 422.5006103515625px;
+  stroke-dashoffset: 422.5006103515625px;
 }
-#logo path:nth-child(9) {
-
+#logo path:nth-child(7) {                /*   I  */
+  stroke-dasharray: 239.8091583251953px;
+  stroke-dashoffset: 239.8091583251953px;
 }
-#logo path:nth-child(10) {
-
+#logo path:nth-child(8) {                /*   M  */
+  stroke-dasharray: 668.78369140625px;
+  stroke-dashoffset: 668.78369140625px;
 }
-#logo path:nth-child(11) {
-
+#logo path:nth-child(9) {                /*   A  */
+  stroke-dasharray: 506.44622802734375px;
+  stroke-dashoffset: 506.44622802734375px;
 }
-#logo path:nth-child(12) {
-
+#logo path:nth-child(10) {               /*   T  */
+  stroke-dasharray: 314.94970703125px;
+  stroke-dashoffset: 314.94970703125px;
 }
-#logo path:nth-child(13) {
-  stroke-dasharray: 30px;
+#logo path:nth-child(11) {               /*   I  */
+  stroke-dasharray: 239.8092041015625px;
+  stroke-dashoffset: 239.8092041015625px;
+}
+#logo path:nth-child(12) {               /*   O  */
+  stroke-dasharray: 433.7727966308594px;
+  stroke-dashoffset: 433.7727966308594px;
+}
+#logo path:nth-child(13) {               /*   N  */
+  stroke-dasharray: 422.4960632324219px;
+  stroke-dashoffset: 422.4960632324219px;
 }
