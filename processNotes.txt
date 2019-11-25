@@ -9,5 +9,8 @@ STEP 1: Using the software of your choice (Adobe Illustrator, Figma, etc.), crea
   1. For the shape or text, right click the element and select "outline stroke"
     -- nothing looks like it happened, but in the exporting the scg you will have indivudal paths.
   2. Add a "stroke" and change the color to white.
-  3. 
+  3. Add pixels to the text or shape.
+  4. remove fill.   
+    -- By doing this, you shoulf have a text or shape that has white outlines.
+  5. To save, right click on the image and select "copy/paste" and then "save as svg"
 
