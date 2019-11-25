@@ -70,14 +70,14 @@ STEP 1: Using the software of your choice (Adobe Illustrator, Figma, etc.), crea
 
 STEP 3: Add id to svg element
   ----------------------------------------------------
-    id="logo"
+    id="words"
   ----------------------------------------------------
 
 
 
 STEP 4: Create selectors for the sperate paths (24 in all) in your svg animation:
   ---------------------------------------------------------------------------------
-    #logo path:nth-child(24) {
+    #words path:nth-child(24) {
 
     }
   ---------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ STEP 4: Create selectors for the sperate paths (24 in all) in your svg animation
 
 STEP 5: For each of the selectors, add logic:
   -----------------------------------------------------------------
-    #logo path:nth-child(24) {
+    #words path:nth-child(24) {
         stroke-dasharray: 000;
         stroke-dashoffset: 000;
     }
@@ -101,19 +101,19 @@ STEP 6: Get the exact path length:
   the identification numbers for each of the letters by getting the total length.
   ========================================================================================
 
-  * In you javascript file, add a query selector that selects all the paths for #logo:
+  * In you javascript file, add a query selector that selects all the paths for #words:
     -------------------------------------------------------------------------------
-      const logo = document.querySelectorAll('#logo path')                             // select the logo path
+      const words = document.querySelectorAll('#words path')                             // select the words path
     -------------------------------------------------------------------------------
-  * To check if this works, console.log(logo) and in devtools you should see all the paths selected.
+  * To check if this works, console.log(words) and in devtools you should see all the paths selected.
   * What you will see is a "Nodelist" with 24 paths.
 
 
 
 STEP 7: Create a for loop to loop through each letter:
   ----------------------------------------------------------------------
-    for (let i=0; i < logo.length; i++) {                                  // loop through the logo paths...
-      console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);           // "Letter 0 is 493.9128723144531"
+    for (let i=0; i < words.length; i++) {                                  // loop through the words paths...
+      console.log(`Letter ${i} is ${words[i].getTotalLength()}`);           // "Letter 0 is 493.9128723144531"
     }
   ----------------------------------------------------------------------
   * The results will be this:
@@ -152,7 +152,7 @@ STEP 7: Create a for loop to loop through each letter:
 
   STEP 8: Replace the stroke-dasharray for each of the corresponding letters with the numbers provided:
     -------------------------------------------------------------------------------
-      #logo path:nth-child(2) {                /*   S  */
+      #words path:nth-child(2) {                /*   S  */
         stroke-dasharray: 493.9128723144531px;
         stroke-dashoffset: 493.9128723144531px;
       }
@@ -173,9 +173,9 @@ STEP 9: Add keyframes to animate:
 
 
 
-  STEP 10: Then, add an "animation" property to each logo path:
+  STEP 10: Then, add an "animation" property to each words path:
   -----------------------------------------------------------------------
-      #logo path:nth-child(2) {                                               /*   S  */
+      #words path:nth-child(2) {                                               /*   S  */
         stroke-dasharray: 493.9128723144531px;
         stroke-dashoffset: 493.9128723144531px;
         animation: line-anim 2s ease forwards;
@@ -192,9 +192,9 @@ STEP 9: Add keyframes to animate:
         }
       }
     -------------------------------------------------------------------
-    and then in your logo id:
+    and then in your words id:
     --------------------------------------------------------------------
-    #logo {
+    #words {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -209,6 +209,10 @@ STEP 9: Add keyframes to animate:
 
     Notes:
 
+    * https://developer.mozilla.org/en-US/docs/Web/SVG    -- SVG
+    * https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute  -- Attributes for SVG
+
+
     On SVGS
       * So what you should see if you follow the above instructions is a outlined text saying "SVG Animation" which will appear on load.     
       * On using figma, its very good although you need to install a fair bit of plugins to get close to photoshop/illustrator/XD level.
@@ -216,6 +220,12 @@ STEP 9: Add keyframes to animate:
         lines or curved lines. The shape of the path is element is defined by one attribute: d.  the "d" attribute contains a series of 
         command and parameters used by those commands.
 
-    On SVG implementatyion
+    On SVG implementation
       * You need to assign an id to the svg and create selectors for each of the paths in the svg file using path nth-child.
-      * 
+      * For each selector, we have 2 properties, the stroke-dasharray (defines the pattern of dashes) and stroke-dashoffset (presentation
+        attribute defining an offset on the rendering of the associated dash array). In the case of the selector, we set these properties
+        to the path length (which we will find in the JS section).
+
+    On finding path length
+      * To find the path length, all you need to do is create a variable and select the "path" property in the DOM.
+      * Then, loop through each of the path and find the 
