@@ -49,4 +49,30 @@ STEP 1: Using the software of your choice (Adobe Illustrator, Figma, etc.), crea
   ------------------------------------------------------------------------------------------------------------------------------------------
 
 
-  STEP 2: 
+  STEP 2: Add initial CSS stylization:
+    ---------------------------------------------------------------
+      * {   
+          box-sizing: border-box;       
+          margin: 0;      
+          padding: 0;      
+        }
+
+        body {
+          display: flex;
+          height:100vh;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(to right, rgb(177, 178, 189), rgb(165, 168, 149));
+        }
+    ---------------------------------------------------------------
+
+
+
+STEP 3: Add id to svg element
+  ----------------------------------------------------
+    id="logo"
+  ----------------------------------------------------
+
+
+
+STEP 4: 

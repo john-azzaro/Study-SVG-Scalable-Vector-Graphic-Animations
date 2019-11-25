@@ -1,12 +1,19 @@
-/* Global Settings */
-*, *::before, *::after {                                                        /* for all elements inside the application (including pseudo elements)... */
+
+* {                                                        /* for all elements inside the application (including pseudo elements)... */
   box-sizing: border-box;                                                       /* ... standardize widths and heights. */
   margin: 0;                                                                    /* ... set margin to 0 ... */
   padding: 0;                                                                   /* ... set padding to 0 ... */
 }
 
-body {                                                                                      /* for all elements in the body...*/
+body {
   width: 100%;
   height: 100vh;
-  background-color: linear-gradient(to right, rgb(177, 178, 189), rgb(165, 168, 149));           /* ... the background will be a gradient ...*/ 
+  background: linear-gradient(to right, rgb(177, 178, 189), rgb(165, 168, 149));
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
