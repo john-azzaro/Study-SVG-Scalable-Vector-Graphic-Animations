@@ -19,13 +19,13 @@ body {
 }
 
 #logo path:nth-child(1) {
-
+  stroke-dasharray: 30px;
 }
 #logo path:nth-child(2) {
-
+  stroke-dasharray: 30px;
 }
 #logo path:nth-child(3) {
-
+  stroke-dasharray: 30px;
 }
 #logo path:nth-child(4) {
 
@@ -55,38 +55,5 @@ body {
 
 }
 #logo path:nth-child(13) {
-
-}
-#logo path:nth-child(14) {
-
-}
-#logo path:nth-child(15) {
-
-}
-#logo path:nth-child(16) {
-
-}
-#logo path:nth-child(17) {
-
-}
-#logo path:nth-child(18) {
-
-}
-#logo path:nth-child(19) {
-
-}
-#logo path:nth-child(20) {
-
-}
-#logo path:nth-child(21) {
-
-}
-#logo path:nth-child(22) {
-
-}
-#logo path:nth-child(23) {
-
-}
-#logo path:nth-child(24) {
-
+  stroke-dasharray: 30px;
 }
