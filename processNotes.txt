@@ -96,7 +96,12 @@ STEP 5: For each of the selectors, add logic:
 
 
 STEP 6: Get the exact path length:
-  * In you javascript file, add a query selectot that selects all the paths for #logo:
+  ========================================================================================
+  IMPORTANT: The Javascript is NOT used in the functionality of the website. We need to get
+  the identification numbers for each of the letters by getting the total length.
+  ========================================================================================
+
+  * In you javascript file, add a query selector that selects all the paths for #logo:
     -------------------------------------------------------------------------------
       const logo = document.querySelectorAll('#logo path')                             // select the logo path
     -------------------------------------------------------------------------------
@@ -198,3 +203,12 @@ STEP 9: Add keyframes to animate:
     }
 
     --------------------------------------------------------------------
+
+
+
+
+    Notes:
+
+      * So what you should see if you follow the above instructions is a outlined text saying "SVG Animation" which will appear on load.     
+      * On using figma, its very good although you need to install a fair bit of plugins to get close to photoshop/illustrator/XD level.
+      * 
