@@ -75,4 +75,9 @@ STEP 3: Add id to svg element
 
 
 
-STEP 4: 
+STEP 4: Create selectors for the sperate paths (24 in all) in your svg animation:
+  ---------------------------------------------------------------------------------
+    #logo path:nth-child(24) {
+
+    }
+  ---------------------------------------------------------------------------------
