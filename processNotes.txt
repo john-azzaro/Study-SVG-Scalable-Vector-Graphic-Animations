@@ -209,6 +209,13 @@ STEP 9: Add keyframes to animate:
 
     Notes:
 
+    On SVGS
       * So what you should see if you follow the above instructions is a outlined text saying "SVG Animation" which will appear on load.     
       * On using figma, its very good although you need to install a fair bit of plugins to get close to photoshop/illustrator/XD level.
+      * On svg's, the "path" is used to create lines, curves, arcs, etc. The paths create complex shapes by combining mulitple straight 
+        lines or curved lines. The shape of the path is element is defined by one attribute: d.  the "d" attribute contains a series of 
+        command and parameters used by those commands.
+
+    On SVG implementatyion
+      * You need to assign an id to the svg and create selectors for each of the paths in the svg file using path nth-child.
       * 
