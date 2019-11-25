@@ -82,6 +82,8 @@ STEP 4: Create selectors for the sperate paths (24 in all) in your svg animation
     }
   ---------------------------------------------------------------------------------
 
+
+
 STEP 5: For each of the selectors, add logic:
   -----------------------------------------------------------------
     #logo path:nth-child(24) {
@@ -91,5 +93,21 @@ STEP 5: For each of the selectors, add logic:
   -----------------------------------------------------------------
     * Stroke-dasharray will add spaces in our svg path (like dashed lines). So stroke-dasharray: 30px; will create a dashed line for the letter.
 
-STEP 6: Get the exact path length
-  * In you javascript file
+
+
+STEP 6: Get the exact path length:
+  * In you javascript file, add a query selectot that selects all the paths for #logo:
+    -------------------------------------------------------------------------------
+      const logo = document.querySelectorAll('#logo path')                             // select the logo path
+    -------------------------------------------------------------------------------
+  * To check if this works, console.log(logo) and in devtools you should see all the paths selected.
+  * What you will see is a "Nodelist" with 24 paths.
+
+
+
+STEP 7: Create a for loop to loop through each letter:
+  ----------------------------------------------------------------------
+    for (let i=0; i < logo.length; i++) {                                  // loop through the logo paths...
+      console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);           // "Letter 0 is 493.9128723144531"
+    }
+  ----------------------------------------------------------------------
