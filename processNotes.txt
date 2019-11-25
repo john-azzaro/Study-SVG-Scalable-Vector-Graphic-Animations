@@ -1,5 +1,13 @@
 SVG animations Process Notes
 ============================
+
+
 STEP 1: Using the software of your choice (Adobe Illustrator, Figma, etc.), create a basic shape or text:
 ==========================================================================================================
-* In th
+  * For example, in Figma, just create a basic shape or text (i.e. "SVG Animation").
+
+  1. For the shape or text, right click the element and select "outline stroke"
+    -- nothing looks like it happened, but in the exporting the scg you will have indivudal paths.
+  2. Add a "stroke" and change the color to white.
+  3. 
+
