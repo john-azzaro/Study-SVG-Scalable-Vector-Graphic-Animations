@@ -164,3 +164,37 @@ STEP 9: Add keyframes to animate:
     }
 }
   -----------------------------------------------------------------------
+
+
+
+
+  STEP 10: Then, add an "animation" property to each logo path:
+  -----------------------------------------------------------------------
+      #logo path:nth-child(2) {                                               /*   S  */
+        stroke-dasharray: 493.9128723144531px;
+        stroke-dashoffset: 493.9128723144531px;
+        animation: line-anim 2s ease forwards;
+      }
+  -----------------------------------------------------------------------
+
+
+
+  STEP 11: Lastly, you can add a fill for your letters:
+    -------------------------------------------------------------------
+      @keyframes fill{
+        to {
+          fill: white;
+        }
+      }
+    -------------------------------------------------------------------
+    and then in your logo id:
+    --------------------------------------------------------------------
+    #logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fill 0.5s ease forwards 3s;
+    }
+
+    --------------------------------------------------------------------
