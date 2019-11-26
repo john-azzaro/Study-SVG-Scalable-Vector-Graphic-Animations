@@ -226,6 +226,15 @@ STEP 9: Add keyframes to animate:
         attribute defining an offset on the rendering of the associated dash array). In the case of the selector, we set these properties
         to the path length (which we will find in the JS section).
 
-    On finding path length
+    On finding path length with JS
       * To find the path length, all you need to do is create a variable and select the "path" property in the DOM.
-      * Then, loop through each of the path and find the 
+      * Then, loop through each of path elements to find the total length.
+      * Put the full number in the property.
+      * Note: some experimentation still needs to be done (see V as ana example since it does not completely connect and may need to be 
+        altered in the SVG file itself).
+
+ 
+    On keyframes for CSS animation:
+      * Keyframes controls the steps in a CSS animation sequence by definging syles for keyframes (i.e. waypoints) along an animation sequence.
+      * For animation, see each of the rulesets for each path.
+      * Needs a little more research to work, but investigate the from-to method.
