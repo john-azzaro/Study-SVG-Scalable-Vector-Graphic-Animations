@@ -1,5 +1,5 @@
 # SVG Animations study
-See it Live: 
+See it live: https://john-azzaro.github.io/Study-SVG-Scalable-Vector-Graphic-Animations/
 
 <br>
 
@@ -62,3 +62,4 @@ Yes! I use extensive Commentary (mostly in the form of my thought process) so th
 <br>
 
 ## Screenshots
+![svg](https://user-images.githubusercontent.com/37447586/74305868-dd428e80-4d15-11ea-89f4-2c8530907d28.png)
