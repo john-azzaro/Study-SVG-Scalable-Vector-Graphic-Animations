@@ -8,7 +8,8 @@ See it Live:
 
 Here are a few questions from the study to consider:
 
-* [](#)
+* [What are the key takeaways from the SVG Animation Study?](#What-are-the-key-takeaways-from-the-SVG-Animation-Study)
+* [Does the SVG Animation Study feature commentary?](#Does-the-SVG-Animation-Study-feature-commentary)
 * [Screenshots](#Screenshots)
 
 <br>
