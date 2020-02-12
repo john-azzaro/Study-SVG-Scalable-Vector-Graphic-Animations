@@ -26,7 +26,7 @@ you need to do to create a SVG file is: right click on the image, copy/paste, th
 file.
 
 
-### To animate an SVG, you'll need get the exact length of the path.
+### Create a length utility to get the exact length of the path. 
 -----
 To accomplish this, create a simple utility that finds the EXACT length of the path you want to animate.
 ```JavaScript
@@ -39,9 +39,16 @@ To accomplish this, create a simple utility that finds the EXACT length of the p
   }
 ```
 
-
-### 
+### Translate the results of the length utility to CSS.
 -----
+With the results of the utility, you can transfer the values to  the words path.
+```CSS
+  #words path:nth-child(2) {                   /*   S  */
+    stroke-dasharray: 493.9128723144531px;
+    stroke-dashoffset: 493.9128723144531px;
+    animation: line-anim 2s ease forwards;
+  }
+```
 
 
 </dd>
