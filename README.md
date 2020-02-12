@@ -4,7 +4,7 @@ See it live: https://john-azzaro.github.io/Study-SVG-Scalable-Vector-Graphic-Ani
 <br>
 
 ## What is SVG Animations Study?
-
+A handy study in SVG animations, including how to create a SVG file with Figma, the construction of a special utility to find the exact lengths of paths for the animation, translating the results to CSS,  etc.
 
 Here are a few questions from the study to consider:
 
