@@ -19,6 +19,16 @@ Here are a few questions from the study to consider:
 <dl>
 <dd>
 
+### Figma makes it super easy to create an SVG file
+-----
+This study uses a text outline created in figma, but the process of creating the SVG file applies to pretty much any text or image. For figma, all
+you need to do to create a SVG file is: right click on the image, copy/paste, then save as an SVG file. Then you can paste the SVG file in your HTML
+file.
+
+
+### 
+-----
+
 ### 
 -----
 
